@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>商家注册</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/userRegister.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div class="topBox">
+    	<div class="topContent clearfix">
+    		<div class="logo fl"><a href="index.html"><img src="images/logo.png"></a></div>
+    		<ul class="menuList fl">
+    			<li><a href="index.html">首页</a></li>
+    			<li><a href="function.html">服务</a></li>
+    			<li><a href="case.html">案例</a></li>
+    			<li><a href="help.html">帮助</a></li>
+    		</ul>
+    		<div class="contactWay">
+    			<div class="phoneNum"><i class="phoneIcon"></i><span class="number">400-0505-811</span></div>
+    			<div class="entrance"><a class="businessEntr">商家入口</a><a href="personalPortal.html" class="personalEntr">个人入口</a></div>
+    		</div>
+    	</div>
+    </div>
+    <div class="navBarBox">
+    	<div class="navText">商家注册 ></div>
+    </div>
+    <div class="registerInforBox">
+    	<div class="setUpListBox">
+    		<span class="registerTitle"><i>1</i>填写手机号</span>
+    		<span class="registerTitle  current"><i>2</i>完成注册</span>
+    	</div>
+    	<div class="registerSuccessBox">
+            <p class="successText">恭喜您注册成功！</p>
+            <p class="backManageHome"><i class="tenSecondReduce">10</i>秒后跳转管理后台首页></p>
+        </div>
+    </div>
+    <div class="userRegisterFooter">
+    	<a href="function.html">服务一览</a><span>|</span><a href="case.html">成功案例</a><span>|</span><a href="serviceAgreement.html">享推服务协议</a><span>|</span><a href="newsInfor.html">新闻动态</a><span>|</span><a href="help.html">常见问题</a><span>|</span><a href="backgroundCourse.html">关于我们</a><span>|</span><a href="businessCooper.html">商务合作</a><span>|</span><a href="joinus.html">诚邀英才</a>
+    </div>
+    <div class="rightsReserved">苏ICP备08014XXX号-X Copyright 2016-2020 享推科技发展有限公司 ALL Rights Reserved</div>
+<script type="text/javascript">
+    $(function(){
+        var txt = parseInt($(".tenSecondReduce").text());
+        var setInter = setInterval(function(){
+            if(txt > 0){
+                txt--;
+                $(".tenSecondReduce").text(txt);
+            }else{
+                clearInterval(setInter);
+                window.location.href = "index.html";
+            }   
+        },1000);
+    });
+</script>
+</body>
+</html>

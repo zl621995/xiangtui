@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-28 09:34:04
+ * @version $Id$
+ */
+.topBox{position: relative;z-index: 999;}
+
+.caseBanner{width:100%;height:605px;background-color:#f73856;min-width:1200px;}
+.caseBannerMain{width:1200px;height:605px;margin:0 auto;position:relative;}
+.caseBannerMain a{cursor: pointer;}
+.xtuiPig{width:159px;height:159px;background:url(../images/pig.jpg) no-repeat;position: absolute;left:50%;top:50%;margin-top:88px;margin-left: -183px;}
+.chinaPing{width:328px;height:328px;position: absolute;left:50%;top:50%;margin-top:-252px;margin-left: -183px;}
+.tctravel{width:328px;height:328px;position: absolute;left:50%;top:50%;margin-top:-81px;margin-left: -522px;}
+.nvwang{width:159px;height:159px;position: absolute;left:50%;top:50%;margin-top:-252px;margin-left: -522px;}
+.people1{width:159px;height:159px;position: absolute;left:50%;top:50%;margin-top:-252px;margin-left: -353px;}
+.alibaba{width:328px;height:159px;position: absolute;left:50%;top:50%;margin-top:-252px;margin-left:156px;}
+.rzcenter{width:159px;height:159px;position: absolute;left:50%;top:50%;margin-top:-81px;margin-left:156px;}
+.beibei{width:328px;height:159px;position: absolute;left:50%;top:50%;margin-top:88px;margin-left:-12px;}
+.EF{width:159px;height:328px;position: absolute;left:50%;top:50%;margin-top:-81px;margin-left:326px;}
+.moveChangeScale{transition: all 0.2s linear;}
+.moveChangeScale:hover{transform: scale(1.05);}
+.sloganBox{width:100%;height:115px;line-height:110px;min-width: 1200px;background-color:#3d3d3d;text-align:center;color:#ffffff;font-size:36px;font-weight:bold;position: relative;z-index: 999;}
+
+.rentalIndustry{width:100%;min-width: 1200px;background-color:#ffffff;position: relative;height:590px;overflow: hidden;}
+.boxCentent{width:1200px;height:590px;margin:0 auto;position: relative;}
+.industryType{width:1756px;height:169px;position: absolute;top:0px;}
+.industryImg{width:780px;height:344px;position: absolute;top:185px;opacity:0;}
+.detailInforBox{width:345px;padding:10px;position: absolute;opacity:0;font-size: 18px;}
+.detailInforBox p{line-height: 31px;font-size:18px;}
+.rightShadowBox{position: absolute;right:-25px;top:15px;width:25px;height:352px;background-color:#d4d4d4;transform:skewY(50deg);}
+.leftShadowBox{position: absolute;bottom:-30px;left:13px;width:500px;height:30px;background-color:#d4d4d4;transform:skewX(40deg);}
+.rightShadowBox2{position: absolute;left:-25px;top:15px;width:25px;height:352px;background-color:#d4d4d4;transform:skewY(-50deg);}
+.leftShadowBox2{position: absolute;bottom:-30px;right:13px;width:500px;height:30px;background-color:#d4d4d4;transform:skewX(-40deg);}
+
+.industryText{width:600px;position: absolute;top:20px;color:#ffffff;font-size:18px;}
+.industryText p{line-height: 30px;}
+.industryText .textRight{text-align:right;}
+.detailInforBox .titleName{font-size:30px;color:#f73856;margin:50px 0 20px 0;}
+.detailInforBox dl{margin-bottom: 5px;}
+.detailInforBox dl dt{float:left;color:#999999;line-height: 30px;}
+.detailInforBox dl dd{margin-left:90px;color:#333333;line-height: 30px;}
+
+
+/*金融行业*/
+.industryType_finance{left:50%;margin-left: -988px;background:url(../images/financeTitle.png) no-repeat;}
+.industryType_finance .industryText{right:180px;}
+.financeImg{background:url(../images/financeImg.png) no-repeat;left:0px;}
+.financeImg.addEffect{opacity:1;animation:getLeft3 1s ease;animation-fill-mode:both;}
+.financeIndustry .detailInforBox{right:0px;top:150px;}
+.financeIndustry .titleName{margin:50px 0 20px 0;}
+
+/*租车行业*/
+/*.carRentalIndustry{z-index: 999;}
+.industryType_didi{right:50%;margin-right: 40px;background:url(../images/carRental.jpg) no-repeat;}
+.didiTaxiImg{background:url(../images/didiTaxi.jpg) no-repeat;left:0px;}
+.didiTaxiImg.addEffect{opacity:1;animation:getLeft3 1s ease;animation-fill-mode:both;}
+.carRentalIndustry .detailInforBox{right:0px;top:170px;}
+.carRentalIndustry .detailInforBox p{color:#333333;}*/
+
+/*保险行业*/
+.insuranceIndustry{background-color:#3d3d3d;}
+.industryType_pingan{background:url(../images/insuranceTitle.png) no-repeat;right:50%;margin-right:-965px;}
+.industryType_pingan .industryText{left:180px;}
+.pinganImg{background:url(../images/insuranceImg.png) no-repeat;right:0px;}
+.pinganImg.addEffect{opacity:1;animation:getRight3 1s ease;animation-fill-mode:both;}
+.insuranceIndustry .detailInforBox{left:0px;top:180px;}
+.insuranceIndustry .titleName{margin:10px 0;}
+.insuranceIndustry .detailInforBox dl dd{color:#ffffff;}
+
+/*旅游行业*/
+.travelIndustry{}
+.industryType_tongcheng{left:50%;margin-left: -988px;background:url(../images/travelTitle.png) no-repeat;}
+.industryType_tongcheng .industryText{right:180px;}
+.travelImg{background:url(../images/travelImg.png) no-repeat;left:0px;}
+.travelImg.addEffect{opacity:1;animation:getLeft3 1s ease;animation-fill-mode:both;}
+.travelIndustry .detailInforBox{right:0px;top:150px;}
+.travelIndustry .titleName{margin:30px 0 20px 0;}
+
+/*电商行业*/
+.businessIndustry{background-color:#f73856;}
+.industryType_beibei{background:url(../images/businessTitle.png) no-repeat;right:50%;margin-right:-965px;}
+.industryType_beibei .industryText{left:180px;}
+.businessImg{background:url(../images/businessImg.png) no-repeat;right:0px;}
+.businessImg.addEffect{opacity:1;animation:getRight3 1s ease;animation-fill-mode:both;}
+.businessIndustry .detailInforBox{left:0px;top:150px;}
+.businessIndustry .titleName{color:#ffffff;}
+.businessIndustry .detailInforBox dl dt{color:#ffa8b6;}
+.businessIndustry .detailInforBox dl dd{color:#ffffff;}
+
+/*医疗行业*/
+.medicalCareIndustry{}
+.industryType_ruici{left:50%;margin-left: -988px;background:url(../images/medicalCareTitle.png) no-repeat;}
+.industryType_ruici .industryText{right:180px;}
+.ruiciImg{background:url(../images/medicalImg.png) no-repeat;left:0px;}
+.ruiciImg.addEffect{opacity:1;animation:getLeft3 1s ease;animation-fill-mode:both;}
+.medicalCareIndustry .detailInforBox{right:0px;top:150px;}
+.medicalCareIndustry .titleName{margin:30px 0 20px 0;}
+
+/*教育行业*/
+.educationIndustry{background-color:#3d3d3d;}
+.educationIndustry .industryText{width:630px;}
+.industryType_edu{background:url(../images/eduTitle.png) no-repeat;right:50%;margin-right:-965px;}
+.industryType_edu .industryText{left:180px;}
+.eduImg{background:url(../images/eduImg.png) no-repeat;right:0px;}
+.eduImg.addEffect{opacity:1;animation:getRight3 1s ease;animation-fill-mode:both;}
+.educationIndustry .detailInforBox{left:0px;top:150px;}
+.educationIndustry .detailInforBox dl dt{color:#999999;}
+.educationIndustry .detailInforBox dl dd{color:#ffffff;}
+
+/*媒体行业*/
+.industryType_media{left:50%;margin-left: -988px;background:url(../images/mediaTitle.png) no-repeat;}
+.industryType_media .industryText{right:180px;}
+.mediaImg{background:url(../images/mediaImg.png) no-repeat;left:0px;}
+.mediaImg.addEffect{opacity:1;animation:getLeft3 1s ease;animation-fill-mode:both;}
+.mediaIndustry .detailInforBox{right:0px;top:150px;}
+.mediaIndustry .titleName{margin:30px 0 20px 0;}

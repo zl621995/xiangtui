@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-29 17:11:07
+ * @version $Id$
+ */
+ /*新闻动态*/
+.newsListMain{width:100%;background-color: #f0f0f0;}
+.newInforBox{width:1200px;margin:0 auto;padding-top:40px;}
+.newInforBox a{width:386px;height:312px;background-color: #000000;position: relative;margin-bottom: 40px;float:left;overflow: hidden;}
+.newInforBox a .imgMask{width:386px;height:232px;overflow: hidden;background-color:rgba(255,255,255,0.3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4Cffffff,endColorstr=#4Cffffff);position: absolute;left:0px;top:0px;display: none;}
+.newInforBox a:hover .imgMask{display: block;}
+.newInforBox a.setMargin{margin:0 20px;}
+.newInforBox a img{width:386px;height:232px;overflow: hidden;}
+.newInforBox .newsInformation{padding:10px 15px;background-color: #ffffff;}
+.newInforBox a p{line-height: 30px;color:#666666;font-size:18px;}
+.playBtn1,.playBtn2{cursor: pointer;}
+.playBtn{background:url(../images/news/playIcon.png) no-repeat;cursor:pointer;position: absolute;left:50%;top:50%;width:86px;height:86px;margin-left: -43px;margin-top: -70px;}
+
+.videoPlayBox{width:100%;height:100%;background-color: rgba(0,0,0,0.9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000);position: fixed;left: 0px;top:0px;z-index: 9999;}
+.videoPlayBox iframe{position: absolute;left:50%;top:50%;margin-left:-600px;margin-top:-300px;}
+
+/*新闻详情页*/
+.detailNewsInforMain{width:1200px;margin:0 auto;padding:42px 0;}
+.detailNewsInforBox{padding:30px;width:810px;background-color: #ffffff;}
+.detailNewsInforBox h3{font-size:30px;color:#333333;font-weight: normal;text-align: center;}
+.releaseDateLook{border-bottom: 1px solid #f73856;padding:10px 10px 8px;margin: 30px 0;}
+.releaseDateLook .releaseDate,.releaseDateLook .lookNumber{height:16px;line-height: 16px;text-indent: 25px;color:#999999;display: inline-block;}
+.releaseDateLook .releaseDate{background:url(../images/news/clocks.png) no-repeat center left;}
+.releaseDateLook .lookNumber{background:url(../images/news/eye.png) no-repeat center left;margin-left: 40px;}
+.releaseDateLook .lookNumber i{margin-right:5px;}
+
+.newDetailInfor p{color:#333333;font-size:18px;line-height: 30px;text-indent: 2em;margin-top: 15px;}
+.newDetailInfor img{margin: 30px 0;width: 100%;height:auto;}
+
+.adListBox{width:310px;}
+.adListBox img{margin-bottom: 30px;}
+
+.fontWeight{font-weight: bold;}

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-30 10:18:37
+ * @version $Id$
+ */
+/**/
+.bodySetContentBg{width:100%;background-color: #f0f0f0;}
+.centerContentMain{width:1200px;margin:0 auto;padding:20px 0 100px 0;}
+.leftMenuNavigation{width:180px;background-color:#ffffff;padding:15px 0 25px;position: relative;}
+.leftMenuNavigation a{width:180px;height:35px;line-height: 35px;color:#666666;display: block;cursor: pointer;text-indent: 25px;position: relative;}
+.leftShadowBox{border-left:16px solid #d0d0d0;border-top:36px solid transparent;width:0px;height:0px;position: absolute;right:-16px;top:0px;}
+.leftMenuNavigation a:hover{background-color: #f5f5f5;}
+.leftMenuNavigation a.current{color:#f73856;cursor:default;}
+.leftMenuNavigation a.current:hover{background-color: #ffffff;}
+.leftMenuNavigation a.current span{width:4px;height:12px;background-color: #f73856;position: absolute;left:10px;top:12px;}
+
+.rightDetailContentBox{width:990px;background-color: #ffffff;padding: 45px 0px;position: relative;color:#333333;min-height:400px;}
+.serviceAgrrementText{padding: 0 20px;}
+.rightShadowBox{border-left:26px solid #d0d0d0;border-top:56px solid transparent;width:0px;height:0px;position: absolute;right:-26px;top:0px;}
+.rightContentBotBg{background:url(../images/insidePageBot.png) no-repeat;width:1010px;height:61px;position: absolute;bottom:-61px;left:0px;}
+.rightDetailContentBox .title{color:#333333;font-size:24px;text-align:center;font-weight: bold;}
+.rightDetailContentBox .noteText{color:#999999;text-align:center;margin:25px 0 60px 0;}
+.rightDetailContentBox p.firstTitle{font-weight: bold;}
+
+.rightDetailContentBox dl dt{float:left;line-height: 35px;color:#333333;}
+.rightDetailContentBox .fontWeight{font-weight: bold;}
+.rightDetailContentBox p{line-height:35px;}
+.rightDetailContentBox p.textIndent{text-indent:2em;}
+.rightDetailContentBox dl dd{margin-left:40px;line-height:35px;}
+
+/*关于我们*/
+.backgroundBox,.courseBox,.honorBox,.teamBox,.majorBox,.youthBox{padding: 0 20px;font-size: 18px;}
+.setMarginTopBanner{margin-top:-56px;}
+.aboutusBanner{width:100%;height:345px;background:url(../images/aboutusBanner.jpg) no-repeat;background-size:100% 100%;}
+.backgroundTitle{margin-left: -30px;background:url(../images/titleLeftBg.png) no-repeat center left;color:#ffffff;height:54px;line-height: 45px;margin-bottom: 20px;}
+.backgroundTitle span{background-color: #f73856;padding:0px 20px 0 40px;display: inline-block;vertical-align: top;}
+.backgroundTitle .setSanjiao{width:0px;height:0px;display:inline-block;border-top:45px solid transparent;border-left:30px solid #f73856;vertical-align: top;}
+
+.backgroundBox p,.majorYouthBox p{line-height: 35px;text-indent: 2em;}
+.courseBox{margin-top: 40px;}
+.courseBox p{line-height: 35px;}
+
+/*我们的荣誉*/
+.honorBox{background:url(../images/trophyImg.jpg) no-repeat center right;}
+.honorBox p{margin-bottom: 45px;}
+.honorBox p i{color:#f73856;margin-right:20px;}
+
+/*我们的团队*/
+.teamImgList{padding: 0 10px;}
+.teamImgList img{float:left;width:303px;height:210px;margin:0 10px 20px;}
+.majorBox{margin-top:10px;}
+.youthBox{margin-top:20px;}
+.majorYouthBox .backgroundTitle{margin-bottom: 10px;}
+
+/*我们的地址*/
+.addressBox{padding:0 20px;}
+.contactBox{font-size:18px;color:#333333;margin-top:20px;}
+.locationBox{width:605px;}
+.contactBox p{line-height: 35px;}
+.locationBox .loaction{background:url(../images/address.png) no-repeat left center;padding-left:25px;}
+.locationBox .address2{margin-left:152px;}
+.telMailBox{margin-left:55px;}
+.telMailBox p{padding-left:30px;}
+.telMailBox .tel{background:url(../images/tel.png) no-repeat left center;}
+.telMailBox .mail{background:url(../images/mail.png) no-repeat left center;}
+
+/*商务合作*/
+.businessCooperBox{height:470px;width:100%;background-color:#b1b0b5;overflow:hidden;min-width: 1200px;}
+.businessCooperCenter{width:1200px;height:470px;margin:0 auto;position: relative;}
+.successLoadTogether,.partnerPersonal{position: absolute;left:50%;top:50%;}
+.successLoadTogether{background:url(../images/partnerText.png) no-repeat;width:727px;height:198px;margin-left: -600px;margin-top:-185px;z-index:99;animation:getshow2 1s ease 1s;animation-fill-mode:both;}
+.partnerPersonal{background:url(../images/partner.jpg) no-repeat;width:813px;height:422px;margin-left:-145px;margin-top:-188px;animation:getRight3 1s ease;animation-fill-mode:both;}
+.businessListShow{width:100%;min-width:1200px;padding:50px 0 40px;background-color: #f4f4f4;overflow: hidden;}
+.businessListBox{width:1200px;height:195px;margin:0 auto;}
+.businessInfor{width:340px;height:155px;background-color: #ffffff;padding:20px;position: relative;float: left;}
+.businessInfor2{margin:0 30px;}
+.businessInfor .backgroundTitle{margin-bottom: 5px;}
+.businessInfor .backgroundTitle span{padding:0 20px;font-size: 24px;}
+.businessHeadInfor{}
+.nameJobBox .name{font-size: 24px;margin-bottom: 5px;}
+.relevantContactWay p{font-size:18px;line-height: 30px;}
+.relevantContactWay p span{display: inline-block;width:40px;text-align: right;margin-right: 10px;}
+.relevantContactWay p i{font-size:24px;}
+.botShadowBox{border-left:16px solid #d0d0d0;border-bottom:36px solid transparent;width:0px;height:0px;position: absolute;right:-16px;bottom:0px;}
+@keyframes getRight3{
+	0%{
+		opacity: 0;
+		transform:translateX(400px);
+	}
+	100%{
+		opacity: 1;
+		transform:translateX(0px);
+	}
+}
+@keyframes getshow2{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+/*诚聘英才*/
+.joinusBody{width:100%;background-color:#f4f4f4;overflow:hidden;min-width: 1200px;}
+.joinusCenter{width:1082px;margin:0 auto;padding:40px 66px 40px 52px;}
+.joinusImg{width:1082px;height:389px;background:url(../images/joinus.jpg) no-repeat;position: relative;}
+.adBanner{width:1082px;height:237px;position: relative;}
+.redBannerImg{width:1452px;height:237px;background:url(../images/redBanner.png) no-repeat;position: absolute;top:0px;left:50%;margin-left: -724px;}
+.recruitInforBox{width:1022px;background-color: #ffffff;padding:10px 30px 60px;position: relative;}
+.recruitInforBox h3.jobName{font-size:30px;color:#f73856;margin-top:30px;}
+.recruitInforBox p{font-size:24px;color:#3d3d3d;line-height: 40px;}
+.jobContentBotBg{background-color:#f9f9f9;height:30px;width:1082px;transform: skew(35deg);position: absolute;left: 11px;bottom: -30px;}
+.jobContentRightBg{background:url(../images/joinusBot.png);height:62px;width:21px;position: absolute;right:-21px;bottom: -30px;}

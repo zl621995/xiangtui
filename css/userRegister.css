@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-29 13:54:06
+ * @version $Id$
+ */
+.registerInforBox{width:1200px;margin:0 auto;}
+.setUpListBox{border-bottom:2px solid #dadada;width:1200px;text-align: center;height:45px;line-height: 45px;margin-top: 60px;}
+.registerTitle{padding:10px 30px;height:25px;line-height:25px;font-size:18px;color:#cccccc;margin:0 20px;display:inline-block;}
+.registerTitle i{display:inline-block;width:25px;height:25px;line-height:25px;border-radius: 50%;color:#ffffff;background-color:#cccccc;margin-right:20px;}
+.registerTitle.current{color:#f73856;border-bottom:2px solid #f73856;}
+.registerTitle.current i{background-color:#f73856;color:#ffffff;}
+
+.registerFrames{margin-left:360px;padding-top:30px;}
+.userRegisterList{margin-top: 20px;}
+.userRegisterList span{display: inline-block;vertical-align: middle;}
+.userRegisterList .title{width:100px;text-align: right;color:#666666;font-size:18px;margin-right:20px;}
+.userRegisterList .userInputInfor{height:28px;border:1px solid #d4d4d4;padding:10px;line-height: 28px;font-size:18px;vertical-align: middle;}
+.userRegisterList .userInputInfor1{width:348px;}
+.userRegisterList .userInputInfor2{width:180px;}
+.reCaptchaImg{background-color:#f4f4f4;width:105px;height:50px;line-height:50px;color:#000000;font-size:18px;font-weight: bold;text-align: center;margin-left: 10px;cursor: pointer;}
+.codeResendBtn{background-color:#f73856;color:#ffffff;width:158px;height:50px;line-height:50px;font-size:18px;text-align: center;margin-left: 10px;}
+.countDown{margin-right: 5px;}
+.registerTips{color:#f73857;margin:5px 0 0 118px;height:20px;line-height: 20px;}
+.registerTips_normal{color:#cccccc;margin:5px 0 0 118px;height:20px;line-height: 20px;}
+.voiceCode{color:#666666;margin:65px 0 0 118px;}
+.voiceCode a{color:#f73857;margin-left: 5px;cursor: pointer;}
+.registerNextBtn{width:350px;height:50px;text-align: center;line-height: 50px;color:#ffffff;background-color:#f73857;font-size:18px;margin:20px 0 0 118px;display: block;}
+
+/*完善资料*/
+.userRegisterList select{border:1px solid #d4d4d4;height:50px;padding:0 10px;color:#666666;font-size: 18px;}
+.locationCity select{width: 180px;margin-right:10px;}
+.industryType select{width:370px;}
+.readAgreement input{border:1px solid #d4d4d4;margin-right: 10px;}
+.readAgreement{margin:0 0 65px 118px;}
+.readAgreement *{vertical-align: middle;}
+.readAgreement a{color:#f73856;margin-left: 5px;}
+
+/*完成注册*/
+.registerSuccessBox{background:url(../images/registerSuccess.png) no-repeat;padding:90px 0 0 166px;color:#f73856;height:111px;width:260px;margin:95px auto 260px;}
+.registerSuccessBox .successText{color:#f73856;font-size:30px;margin-bottom: 20px;}
