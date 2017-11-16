@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-28 15:28:13
+ * @version $Id$
+ */
+.helpNavList{height:445px;width:100%;min-width:1200px;background:url(../images/helpBodyTop.png) no-repeat center center;}
+.navListCenter{padding:70px 0;margin:0 auto;width:1130px;}
+.navListCenter li{width:110px;text-align:center;float: left;margin:0 58px;}
+.navListCenter li a{width:94px;height:94px;display: inline-block;cursor: pointer;transition:all 0.5s ease;}
+.navListCenter li a:hover{transform:translateY(-20px);}
+.navListCenter li a.current{transform: none;}
+.helpRegister{background:url(../images/registerNormal.png) no-repeat;}
+.helpRegister.current{background:url(../images/registerClick.png) no-repeat;}
+.helpBaseInfor{background:url(../images/baseInforNormal.png) no-repeat;}
+.helpBaseInfor.current{background:url(../images/baseInforClick.png) no-repeat;}
+.helpNewExtension{background:url(../images/newExtensionNormal.png) no-repeat;}
+.helpNewExtension.current{background:url(../images/newExtensionClick.png) no-repeat;}
+.helpFinance{background:url(../images/financeNormal.png) no-repeat;}
+.helpFinance.current{background:url(../images/financeClick.png) no-repeat;}
+.helpExtension{background:url(../images/extensionNormal.png) no-repeat;}
+.helpExtension.current{background:url(../images/extensionClick.png) no-repeat;}
+.navListCenter li p{margin-top:15px;color:#ffffff;font-size:20px;}
+
+.helpDetailBox{width:1199px;min-height:400px;margin:-35px auto 40px;background-color:#f84662;padding-bottom:134px;position: relative;}
+.helpDetailBox p{color:#ffffff;font-size: 20px;line-height: 44px;}
+.setupTitle{background:url(../images/titleLeftBg2.png) no-repeat;margin-left:-10px;height:54px;line-height: 44px;}
+.setupTitle span{padding:0px 10px 0 30px;background-color:#ededed;display: inline-block;vertical-align: top;color:#f84662;}
+.setSanjiao{width:0px;height:0px;display:inline-block;border-top:44px solid transparent;border-left:30px solid #ededed;vertical-align: top;}
+.answerContent{padding:10px 120px 10px 30px;}
+.helpDetailFooterBg{position: absolute;left:0px;bottom: 0px;background:url(../images/helpBodyBot.jpg) no-repeat;width:1239px;height:89px;}
+
+.serviceTextP{font-size:24px;margin:10px 0;}
+
+.registerHelpBox{width:1200px;height:101px;padding:90px 0;margin:0 auto;color:#ffffff;}
+.consultImg{background:url(../images/consultation.png) no-repeat;width:94px;height: 94px;margin-right:22px;}
+.consultEnter .consultBtn{width:92px;height:30px;text-align:center;line-height: 30px;background-color:#f84662;display: block;color:#ffffff;font-size:18px;}
+
+.serviceNumber{margin-left: 80px;}
+.serviceNumImg{background:url(../images/serviceNumber.png) no-repeat;width:94px;height: 94px;margin-right:22px;}
+.phoneNumberBox .phoneNum{font-size:30px;color:#f84662;font-family: "Arial";}
+
+.registerAccountBox{margin:22px 0 0 0;padding-left:80px;}

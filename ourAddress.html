@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>关于我们</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/insidesPages.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/insidepage.js"></script>
+ <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2f0ea3125f0b73c403e5b36199a01a24"></script>
+</head>
+<body>
+    <div class="topBox">
+    	<div class="topContent clearfix">
+    		<div class="logo fl"><a href="index.html"><img src="images/logo.png"></a></div>
+    		<ul class="menuList fl">
+    			<li><a href="index.html">首页</a></li>
+    			<li><a href="function.html">服务</a></li>
+    			<li><a href="case.html">案例</a></li>
+    			<li><a href="help.html">帮助</a></li>
+    		</ul>
+    		<div class="contactWay">
+    			<div class="phoneNum"><i class="phoneIcon"></i><span class="number">400-0505-811</span></div>
+    			<div class="entrance"><a class="businessEntr">商家入口</a><a href="personalPortal.html" class="personalEntr">个人入口</a></div>
+    		</div>
+    	</div>
+    </div>
+    <div class="navBarBox">
+    	<div class="navText"><a href="backgroundCourse.html" class="firstNav">关于我们 ></a><span>我们的地址</span></div>
+    </div>
+    <div class="aboutusBanner"></div>
+    <div class="bodySetContentBg">
+        <div class="centerContentMain clearfix">
+            <div class="leftMenuNavigation setMarginTopBanner fl">
+                <div class="leftShadowBox"></div>
+                <a href="backgroundCourse.html"><span></span>背景和历程</a>
+                <a href="ourHonor.html"><span></span>我们的荣誉</a>
+                <a href="ourTeam.html"><span></span>我们的团队</a>
+                <a class="current" ><span></span>我们的地址</a>
+            </div>
+            <div class="rightDetailContentBox setMarginTopBanner fr">
+                <div class="leftShadowBox"></div>
+                <div class="rightContentBotBg"></div>
+                <div class="addressBox">
+                    <h3 class="backgroundTitle"><span>地址</span><i class="setSanjiao"></i></h3>
+                    <div style="width:960px;height:560px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                    <div class="contactBox clearfix">
+                        <div class="locationBox fl">
+                            <p class="loaction">团队上海地址：浦东张江金科路地铁口长泰广场11层 (上海互联网聚集地)</p>
+                            <p class="loaction">团队江苏地址：常州市新北区太湖东路9-4号创意产业基地D栋3楼</p>
+                            <p class="address2">常州市武进区天安数码城4层</p>
+                        </div>
+                        <div class="telMailBox fl">
+                            <p class="tel">400 电话：400-0505-811 </p>
+                            <p class="mail">客服邮箱：kfzpt@data-win.cn</p>
+                            <p class="mail">招商邮箱：hj@data-win.cn </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="companyRegister">
+        <div class="registerBox">
+            <p>已有<span class="registerNum">3658</span>家商户注册></p>
+            <div class="registerEnter">
+                <input type="text" class="registerInput" placeholder="请输入您的手机号" />
+                <button class="registerBtn">注册企业账号</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerBox">
+            <dl>
+                <dt>导航</dt>
+                <dd><a href="function.html">服务一览</a></dd>
+                <dd><a href="case.html">成功案例</a></dd>
+            </dl>
+            <dl>
+                <dt>咨询</dt>
+                <dd><a href="serviceAgreement.html">享推服务协议</a></dd>
+                <dd><a href="newsInfor.html">新闻动态</a></dd>
+                <dd><a href="help.html">常见问题</a></dd>
+            </dl>
+            <dl>
+                <dt>联系我们</dt>
+                <dd><a href="backgroundCourse.html">关于我们</a></dd>
+                <dd><a href="businessCooper.html">商务合作</a></dd>
+                <dd><a href="joinus.html">诚邀英才</a></dd>
+            </dl>
+            <div class="webChatPublic fr">
+                <img src="images/webChatPublic.jpg">
+                <p class="followXtuiNumber">关注享推微信服务号</p>
+            </div>
+        </div>
+    </div>
+    <div class="copyRight">苏ICP备08014XXX号-X Copyright 2016-2020 享推科技发展有限公司 ALL Rights Reserved</div>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(119.999005,31.81656),17);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"地址:常州市新北区太湖东路9-4号创意产业基地D栋3楼",title:"上海享推信息技术有限公司",imageOffset: {width:-23,height:-21},position:{lat:31.817327,lng:119.998151}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+    }
+    var map;
+      initMap();
+  </script>
+</body>
+</html>

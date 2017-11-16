@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-22 16:30:07
+ * @version $Id$
+ */
+*{margin:0px;padding:0px;}
+html,body{font-size: 14px;font-family: "微软雅黑";width:100%;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.clearfix{display:inline-block;}/* Hide from IE Mac */.clearfix {display:block;}/* End hide from IE Mac *//* end of clearfix */
+.fl{float:left;}
+.fr{float:right;}
+ul,li{list-style: none;}
+a{text-decoration:none;}
+a:focus{outline: none;}
+img{display: block;border:0 none;}
+input,button,select,textarea{outline:none;font-family: "微软雅黑";}
+input:focus{outline:none;}
+i,em{font-style: normal;}
+
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+
+.roundBtnCom{width:110px;height:36px;text-align: center;line-height: 35px;border-radius:18px;color:#f14a65;background-color: #ffffff;position: absolute;font-size:20px;}
+
+/*头部信息*/
+.topBox{height:120px;width:100%;background-color:#fff;min-width: 1200px;}
+.topContent{width:1200px;margin:0 auto;height:120px;position: relative;}
+.topContent .logo{margin-top: 30px;width: 222px;height: 108px;}
+.topContent .logo a{display: block;width:222px;height: 108px;}
+.topContent .logo a img{width:100%;height: auto;}
+.menuList{margin-left:80px;}
+.menuList li{width:142px;height:120px;text-align: center;margin-right: 18px;float: left;}
+.menuList li a{width:142px;height:47px;display: block;color:#333333;font-size:18px;padding-top:73px;position: relative;}
+.menuList li.current a{background:url(../images/currentMenu.png) no-repeat;color:#ffffff;}
+.menuList li a:after,.menuList li a:before{content:"";width:0px;height:5px;background-color:#f73856;bottom: 0px;position: absolute;transition: all 0.6s ease; }
+.menuList li a:after{left:50%;}
+.menuList li a:before{right:50%;}
+.menuList li:hover a:after{left:50%;width:50%;}
+.menuList li:hover a:before{right:50%;width:50%;}
+.contactWay{position: absolute;right:-200px;top:22px;}
+@media (max-width:1440px){
+	.contactWay{right:0px;}
+}
+.phoneNum i.phoneIcon{display: inline-block;vertical-align:middle;width:28px;height:30px;font-family: "Arial";background: url(../images/icon-phone.png) no-repeat center center;margin-right: 16px;}
+.phoneNum span.number{color:#333333;font-size:28px;display: inline-block;vertical-align: middle;line-height:30px;}
+.entrance{margin-top: 15px;}
+.entrance a{width:110px;height:36px;line-height: 36px;text-align: center;color:#ffffff;display: inline-block;margin:0 5px;cursor:pointer;}
+.entrance a.businessEntr{background-color:#3d3d3d;}
+.entrance a.personalEntr{background-color:#f84d7d;}
+
+/*注册企业账号*/
+.companyRegister{width:100%;height:281px;background:url(../images/registerBg.jpg) no-repeat;background-size:100% 100%;min-width: 1200px;}
+.registerBox{width:1200px;height:212px;padding:35px 0;margin:0 auto;text-align: center;color:#ffffff;font-size:24px;}
+.registerBox .registerNum{margin:0 20px;color:#f14a65;font-size:72px;font-family: "Arial";vertical-align: baseline;font-weight:800;}
+.registerEnter{margin-top:30px;}
+.registerInput{background-color:#e6e6e6;border:0 none;width:308px;height:30px;padding:10px;line-height: 30px;color:#999999;font-size:20px;font-family: "微软雅黑";}
+.registerBtn{width:170px;height:50px;margin-left:20px;background-color:#f14a65;color:#ffffff;text-align: center;line-height: 50px;font-size: 20px;font-family: "微软雅黑";border:0 none;cursor:pointer;}
+
+/*底部*/
+.footer{width:100%;height:310px;min-width: 1200px;}
+.footerBox{width:850px;height:230px;padding:40px 0;margin:0 auto;}
+.footerBox dl{float:left;width:120px;text-align: center;margin:0 25px;}
+.footerBox dl dt{font-size:24px;color:#333333;line-height: 45px;margin-bottom: 15px;}
+.footerBox dl dd a{font-size:16px;color:#666666;line-height:40px;}
+.footerBox dl dd a:hover{color:#f14a65;}
+.copyRight{height:70px;width:100%;background-color:#d4d4d4;line-height: 70px;text-align: center;color:#ffffff;}
+.webChatPublic{width:194px;}
+.webChatPublic img{width:100%;height:auto;}
+.followXtuiNumber{font-size:18px;background:url(../images/weixin.png) no-repeat center left;height: 22px;line-height: 22px;padding-left:32px;color:#666666;margin-top: 10px;}
+
+/*悬浮*/
+.suspensionBox{position: fixed;width:60px;height:130px;left:50%;top:50%;margin-left:700px;margin-top: 200px;z-index: 9999;display: none;}
+@media (max-width:1440px){
+	.suspensionBox{margin-left:500px;}
+}
+.suspensionBox .getTop{background:url(../images/gettop.jpg) no-repeat;width:60px;height:60px;cursor:pointer;opacity: 0.7;filter:Apha(opacity=70);}
+.suspensionBox .contactService{display:block;background-color:#f14a65;width:39px;height:39px;border:1px solid #fabbc5;text-align:center;line-height:20px;cursor:pointer;color:#ffffff;margin-top:10px;padding: 10px;font-size: 14px;}
+.registerNum{text-indent: -999999px;}
+
+/*商家登录*/
+.businessLoginBox{width:100%;height:100%;position:fixed;left:0px;top:0px;z-index: 99999;background-color:rgba(0,0,0,0.73);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);}
+.loginContent{width:760px;*height:570px;min-height:570px;padding:20px;background-color: #ffffff;border-radius:6px;position: absolute;left:50%;top:50%;margin-left: -400px;margin-top:-305px;}
+.closeBox{width: 16px;height:16px;background:url(../images/closeIcon.png) no-repeat;position: absolute;right:10px;top:10px;cursor: pointer;}
+.loginWayTab{width:525px;height:60px;border-bottom: 4px solid #f73857;margin-top:44px;}
+.loginWayList{cursor:pointer;width:210px;height:60px;}
+.accountPassword{background:url(../images/accountPassword_normal.png) no-repeat;margin-left: -18px;}
+.accountPassword.current{background:url(../images/accountPassword.png) no-repeat;}
+.verificationCode{background:url(../images/verificationCode.png) no-repeat;margin-left: -20px;}
+.verificationCode.current{background:url(../images/verificationCode_cur.png) no-repeat;}
+.loginInforBox{width:352px;margin:0 auto;}
+.loginInputBox{width:348px;height:48px;border:1px solid #d4d4d4;margin-top:50px;}
+.loginInputBox span{display:inline-block;width:48px;height:48px;vertical-align: middle;}
+.loginInputBox span.userIcon{background:url(../images/user.png) no-repeat center center #d4d4d4;}
+.loginInputBox span.lockIcon{background:url(../images/lock.png) no-repeat center center #d4d4d4;}
+.loginInputBox input{height:28px;width:215px;padding:10px 20px;color:#cccccc;border:0 none;font-size:18px;line-height: 28px;vertical-align: middle;}
+.loginInputBox input.phoneNumberPut{width:308px;}
+.closeText{display: inline-block;vertical-align: middle;background:url(../images/close.png) no-repeat;width:20px;height:20px;margin-left:10px;cursor:pointer;display: none;}
+.loginTips{color:#f73857;font-size:14px;margin:5px 0 0 10px;}
+.loginBtn{width:350px;height:50px;line-height: 50px;text-align:center;background-color:#f73857;font-size:18px;color:#ffffff;margin-top:58px;cursor: pointer;}
+.passwordInforBox{margin-top:10px;}
+.remenberPassword{color:#999999;}
+.loginInforBox .ImgCodeBox{display:inline-block;vertical-align:middle;background-color: #f4f4f4;color: #000000;cursor: pointer;font-size: 18px;font-weight: bold;height: 50px;line-height: 50px;margin-left: 15px;text-align: center;width:82px;}
+.changeCodeImg{margin-left:8px;width:55px;display:inline-block;vertical-align:middle;color:#337ab7;cursor: pointer;}
+.changeCodeImg:hover{text-decoration: underline;}
+.loginInforBox .ImgCodeBox img{width:100%;height:100%;}
+.forgetPassword{color:#999999;margin-right:10px;}
+.remenberPassword input{border:1px solid #d4d4d4;vertical-align: middle;margin-right: 10px;}
+.registerNow{width:40px;height:59px;padding:5px 30px;background:url(../images/botTriangle.png) no-repeat;margin:20px auto 10px;display: block;color:#ffffff;text-align: center;}
+.verificationCodeBox{margin-top: 50px;}
+.verificationCodeBox input{height:28px;width:150px;padding:10px 20px;color:#cccccc;border:0 none;font-size:18px;line-height: 28px;vertical-align: middle;border:1px solid #d4d4d4;}
+.verificationCodeBox .getCodeBtn{vertical-align: middle;display: inline-block;height:50px;line-height: 50px;width:137px;text-align: center;background-color:#f73857;font-size:18px;color:#ffffff;cursor: pointer;margin-left:15px;}
+.yuyinCode{margin-top:20px;color:#999999;}
+.yuyinCode a{color:#f73857;margin-left:5px;cursor: pointer;}
+
+/*面包屑*/
+.navBarBox{height:55px;width:100%;min-width:1200px;background-color:#f73856;}
+.navText{width:1200px;height:55px;line-height:55px;margin:0 auto;text-indent:20px;font-size:18px;color:#ffffff;}
+.navText .firstNav{color:#ff9dac;}
+.firstNav span{color:#ffffff;}
+
+/*内页底部*/
+.userRegisterFooter{padding:15px;width:1170px;border-top:1px solid #dadada;border-bottom: 1px solid #dadada;margin:100px auto 0;}
+.userRegisterFooter span{margin:0 10px;color:#666666;}
+.userRegisterFooter a{color:#666666;}
+.rightsReserved{width:1170px;padding:15px;margin:0 auto;color:#cccccc;}
+
+/*官网弹窗样式*/
+.xtuiDialog{width:100%;height:100%;position: fixed;left:0px;top:0px;background-color:rgba(0,0,0,0.3);z-index: 999999;}
+.xtuiDialog .dialogBox{width:560px;padding:10px 0px;min-height:100px;background-color:#ffffff;border-radius:4px;position: absolute;left:50%;top:50%;margin-left:-300px;margin-top:-50px;}
+.xtuiDialog .dialogBox h3{font-size:18px;height:40px;line-height: 40px;/*border-bottom:1px solid #ccc;*/padding:0 20px;}
+.xtuiDialog .centerContent{padding:10px 20px;line-height:25px;text-indent:2em;/*min-height:100px;*/}
+.xtuiDialog .sureBtn{background-color:#f84d7d;height:36px;line-height: 36px;width:86px;text-align: center;color:#ffffff;float: right;margin-right:20px;cursor: pointer;}

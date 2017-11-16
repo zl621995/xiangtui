@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-30 16:33:30
+ * @version $Id$
+ */
+.personalPortalBox{width:100%;height:400px;background-color: #f73856;}
+.introduceContent{width:1200px;height:400px;margin:0 auto;position: relative;}
+.iphoneTwo,.adText,.xtuiCode,.downloadBtn{position: absolute;left:50%;top:50%;}
+.iphoneTwo{background:url(../images/iphoneTwo.png) no-repeat;width:496px;height:557px;margin-left:-508px;margin-top: -200px;animation:getLeft3 1s ease;}
+
+.adText{background:url(../images/adText.png) no-repeat;width:547px;height:237px;margin-top:-194px;}
+.xtuiCode{width:194px;height:224px;margin-left:354px;margin-top:-94px;}
+.xtuiCode img{widows: 100%;height:auto;}
+.xtuiCode .followXtuiNumber{background:url(../images/weixin2.png) no-repeat center left;color:#ffffff;}
+.downloadBox{width:1200px;height:120px;margin:0 auto;position: relative;}
+.downloadBtn{margin-left: 30px;margin-top:-10px;}
+.downloadBtn em,.downloadBtn i{display:inline-block;vertical-align: middle;}
+.downloadBtn a{display:inline-block;width:190px;padding:15px 0;text-align:center;border-radius: 30px;line-height: 30px;background-color: #f73856;color:#ffffff;font-size:18px;cursor: pointer;}
+.downloadBtn a:hover{background-color:#f6546d;}
+.downloadBtn i{width:22px;height:26px;margin-right: 15px;}
+.IOSButton{margin-right: 100px;}
+.IOSButton .icon_ios{background:url(../images/apple.png) no-repeat;}
+.AndroidButton .icon_android{background:url(../images/android.png) no-repeat;}
+
+@keyframes getLeft3{
+	0%{
+		opacity: 0;
+		transform:translateX(-400px);
+	}
+	100%{
+		opacity: 1;
+		transform:translateX(0px);
+	}
+}
